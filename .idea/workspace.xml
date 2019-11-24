@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d46bf2d-2487-48f4-a103-a1bbf56295d4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/chat_room/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat_room/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +160,7 @@
       <workItem from="1574495071713" duration="764000" />
       <workItem from="1574513289562" duration="702000" />
       <workItem from="1574548748889" duration="6000" />
-      <workItem from="1574620773056" duration="1731000" />
+      <workItem from="1574620773056" duration="3989000" />
     </task>
     <servers />
   </component>

@@ -76,7 +76,8 @@ render() {
           <LoginPage onLoggedIn={this.onLogin}/>  
         </Route>
         <Route path={`/roomslist/:id`}>
-           <RoomChat roomNumber={this.state.selectedRoomNumber}/>
+           <RoomChat  isLoggedIn={this.state.auth}
+                      roomNumber={this.state.selectedRoomNumber}/>
          </Route>
 
     </div>

@@ -33,6 +33,11 @@ export default class ChatService {
 
     }
 
+    async getRoomMessages(room) {
+        const res = await this.getResource(`/api/v1/chat/dialog/?room=${room}`);
+        return res;
+    }
+
 
     
 }

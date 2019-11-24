@@ -18,21 +18,44 @@ import {
  class RoomChat extends Component {
     //инициализ сервиса
     //chatService = new ChatService();
-
+    chatService = new ChatService();
     constructor() {
         super();
         this.state = {
-            
+            messages: null
         }
+
     }
 
+    renderMessages= () => {
+
+    }
+
+    componentDidMount() {
+
+        this.chatService
+        .getRoomMessages(this.props.roomNumber)
+        .then((res) => {if(res.data.data)
+                            {
+                                console.log(res.data.data);
+                                this.setState({messages:res.data.data});
+                                console.log(this.state);
+                                
+        }});
+        
+      }
+
     render() {
-       
-        return (  
-            <div>
-                <p>Room chat{this.props.roomNumber}</p>
-            </div>
-        ) 
+        if(this.props.isLoggedIn) {
+            
+            return (  
+                <div>
+                    <p>Room #{this.props.roomNumber}</p> 
+
+                </div>
+        )} else {
+            return <Redirect to="/login"/>
+        }
     }
 }
 
